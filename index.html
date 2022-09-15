@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login Form</title>
+       
+    </head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="Bank.js"></script>
+    <body>
+       
+        <div id="main">
+            <div class="title">
+                <h2> Login Form</h2>
+				
+            </div>
+			<h3 class="Error" id="error"></h3>
+			
+            
+            <div class="login">
+                <table
+                    cellspacing="2"
+                    align="center"
+                    cellpadding="8"
+                    border="0"
+                >
+                    <tr>
+                        <td>Enter User Email :</td>
+                        <td>
+                            <input
+                                type="text"
+                                placeholder="Enter Email Address"
+                                id="email"
+                                class="box"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Password :</td>
+                        <td>
+                            <input
+                                type="password"
+                                placeholder="Enter Password here"
+                                id="password"
+                                class="box"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input
+                                type="submit"
+                                value="Reset"
+                                onclick="clearFuncunction()"
+                                class="btn"
+                            />
+                            <input
+                                type="submit"
+                                value="Login"
+                                class="btn"
+                                onClick="Submit()"
+                            />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

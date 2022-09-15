@@ -1,0 +1,117 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Banking Page</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       
+      </head>
+      <body class="bg-red-200">
+       
+        </div>
+
+
+        <div class="Banking">
+          
+        <header>
+    
+          <h1 class="text-5xl text-center mt-9">
+            Banking<span class="font-semibold "> Side</span>
+          </h1>
+          <h1>
+
+          <button  class="bg-slate-100 hover:bg-amber-100  px-3 rounded-full py-3 mx-14" id="button">logout</button>
+        </h1>
+        
+        </header>
+          
+        <main class="w-3/4 mx-auto min-h-screen bg-red-200  ">
+          <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 px-4 p-8 text-white">
+              <div class="bg-blue-400 p-8 rounded">
+                  <h3 class="text-2xl text-center">Last Deposit</h3>
+                  <h4 class="text-4xl"> $<span id="deposit-total">0</span></h4>
+              </div>
+              <div class="bg-green-300 p-8 rounded">
+                   <h3 class="text-2xl text-center">Last Withdraw </h3>
+                   <h4  class="text-4xl">$ <span id="widthdraw-total">0</span></h4>
+              </div>
+              <div class="bg-yellow-500 p-8 rounded">
+                  <h3 class="text-2xl text-center ">Current Balance</h3>
+                  <h3 id="text-4xl" class="text-4xl"> $<span id="balance-total">0</span</h4>
+              </div>     
+              
+            </div>
+          </section>
+          <section class="mt-8 ">
+            <div class="grid grid-cols-2 gap-4 ">
+              <div class="bg-teal-400 p-8 rounded">
+                <h3 class="text-2xl text-center">Deposit</h3>
+                <div>
+                  <input
+                    id="deposit-input"
+                    class="border-2 block border-gray-600 rounded w-3/2 mb-4 px-2"
+                    type="text"
+                    placeholder=" Please enter your Deposit"
+    
+                  />
+              
+                  <button
+                    id="deposit-button"
+                    class="bg-slate-100 text-green-600 px-4 rounded py-2"
+                  >
+                    Deposit
+                  </button>
+                </div>
+              </div>
+              <div class="bg-violet-400 p-8 rounded">
+                <h3 class="text-2xl text-center">Withdraw</h3>
+                
+                <div>
+                  <input
+                    id="Withdraw-input"
+                    class="border-2 block border-gray-600 rounded w-3/2 mb-4 px-2"
+                    type="text"
+                    placeholder="Please enter your Withdraw"
+                  />
+                  <button
+                    id="Withdraw-button"
+                    class="bg-slate-100 text-green-600 px-4 rounded py-2"
+                  >
+                  Withdraw
+                  </button>
+                </div>
+              </div>
+            </div>
+        </section>
+       
+         <table class="table table-striped">
+          <tr class="bg-info relative">
+              <th>User Id</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Previous_Total_deposit</th>
+              <th>Previous_Total_Withdraw</th>
+              <th>Previous_Balance</th>          
+              <th>Current_Balance</th>
+              <th>time</th>
+
+          </tr>
+          <tbody id="myTable">
+			    
+          </tbody>    
+      </table>
+    </div>
+    
+        </main>
+        <script type="module" src="banking.js"></script>
+     
+      </body>
+    </div>
+    </html>
+    
